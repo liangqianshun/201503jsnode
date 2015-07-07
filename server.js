@@ -5,7 +5,7 @@ var waiter = function(request,response){
     var url = request.url;
     var method = request.method;
     var host = request.headers['host'];
-    ponse.setHeader('Content-Type','text/html');
+    response.setHeader('Content-Type','text/html');
     response.end(url+'<br>'+method+'<br>'+host);//结束说话
 }
 
